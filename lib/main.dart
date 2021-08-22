@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/screens/location_detail/location_detail.dart';
+import 'package:travel_app/style.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,6 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        appBarTheme:
+            AppBarTheme(textTheme: TextTheme(headline1: AppBarTextStyle)),
+        textTheme:
+            TextTheme(headline6: TitleTextStyle, bodyText1: BodyTextStyle),
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
