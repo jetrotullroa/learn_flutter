@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/location_detail/text_section.dart';
 
 class LocationDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-            decoration: BoxDecoration(color: Colors.redAccent),
-            child: Text("Hello")),
-        Container(
-            decoration: BoxDecoration(color: Colors.yellowAccent),
-            child: Text("Welcome")),
-        Container(
-            decoration: BoxDecoration(color: Colors.blueAccent),
-            child: Text("Hooman"))
+        TextSection(Colors.yellowAccent, Text("Hooman")),
+        TextSection(Colors.redAccent, Text("Welcome")),
+        TextSection(Colors.blueAccent, Text("Rawrs")),
       ],
     );
   }
